@@ -7,6 +7,9 @@ Calling MoVians to join by contacting the admin of the website - Tom Thomas (Hol
 Favicon - https://favicon.io/favicon-converter/
 PWA     - https://www.pwabuilder.com/
 
+https://www.npmjs.com/package/uglify-js
+uglifyjs --compress --mangle --output formSubmit.min.js -- form-submission-handler.js
+
 Image Manipulation
 ffmpeg -i Einstein_500_459.jpg -vf scale=W*250:H*150 Einstein_250_150.png
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
