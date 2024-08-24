@@ -452,10 +452,19 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#index-page #hero {
   width: 100%;
   height: 100vh;
   background: url("../img/ChurchSideFront.webp") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#feast-page #hero {
+  width: 100%;
+  height: 100vh;
+  background: url("https://lh3.googleusercontent.com/pw/ADCreHfTnZvw6pe8JpxQI5X8pGsF4k_WyaI-OEQ6938v53ExHmsuXp5yudT5wddU6PJ_9jOXh7BrdIVjHqMRGdiowLJ1DfIuYP6jeKpcKAjZRJhmvwpD3y3j7OygiAyHyGnfmNlXwl6jY5E5V6sozqsof7Dr=w498-h664-s-no") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -1488,6 +1497,9 @@ section {
   transform: scale(1.1);
 }
 
+.gslide-desc{
+  color: blueviolet;
+}
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
@@ -2080,10 +2092,10 @@ mark {
 }
 
 .box h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0;
-  margin: 20px 0;
+  margin: 1px 0 10px 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2097,4 +2109,94 @@ mark {
   height: 0.1px;
   padding-bottom: 0.1px;
   transform: scale(0);
+}
+
+/*--------------------------------------------------------------
+# Accordion
+--------------------------------------------------------------*/
+.accordion-body {
+  background: #1a1814;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*--------------------------------------------------------------
+# Team - Day Highlights MoVFeast - /demo/Presento/
+--------------------------------------------------------------*/
+.highlight .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+}
+
+.highlight .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight .member .social a {
+  transition: color 0.3s;
+  color: #111111;
+  margin: 0 3px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background: #e03a3c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.highlight .member .social a:hover {
+  background: #111111;
+}
+
+.highlight .member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.highlight .member .member-info {
+  padding: 25px 15px;
+}
+
+.highlight .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111111;
+}
+
+.highlight .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.highlight .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.highlight .member .social {
+  opacity: 1;
+  bottom: 15px;
 }
